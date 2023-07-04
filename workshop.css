@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    left: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.section1 .nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.section1 .nav .logo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 25px;
+    position: relative;
+}
+
+.section1 .nav .logo img {
+    background-color: black;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50px;
+    background-image: none;
+    filter: invert(1);
+    overflow: hidden;
+}
+
+.section1 .nav .navButton {
+    width: 10%;
+    height: 100%;
+    position: relative;
+    top: 10%;
+    right: 0;
+    text-align: center;
+}
+
+.section1 .nav .navButton a {
+    width: 25%;
+    position: absolute;
+    top: 20%;
+    height: 40%;
+}
+
+.section1 .nav .navButton a i {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    color: black;
+}
+
+.section1 .nav .navButton a i::before {
+    content: "\f0c9";
+    bottom: 50%;
+    position: absolute;
+    left: 15%;
+}
+
+.section1 .nav .navButton .buttons {
+    /* to show the buttons make width = -800% */
+    width: 800%;
+    height: 100%;
+    position: absolute;
+    left: 200%;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* .section1 .nav .navButton .btn-ho i:hover  {
+    animation-name: buttons;
+    animation-duration: 2s;
+    visibility: visible;
+    background-color: red;
+}
+@keyframes buttons {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(-800%);}
+} */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.section1 .rest {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.section1 .rest * {
+    display: block;
+    position: relative;
+    height: 8vh;
+}
+
+.section1 .rest .underline_text::after {
+    content: " ";
+    height: 8%;
+    position: absolute;
+    top: 60%;
+    background-color: black;
+    opacity: 0.3;
+    width: 70%;
+    border-radius: 10px;
+    left: 15%;
+}
+
+.section1 .rest .mainButton {
+    width: 20%;
+    height: 10vh;
+    border-width: 2px;
+    border-color: black;
+    text-decoration: none;
+    border-style: solid;
+    position: relative;
+    top: 5vh;
+    border-radius: 10px;
+}
+
+.section1 .rest .mainButton * {
+    position: absolute;
+    height: 60%;
+    top: 25%;
+    left: 20%;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.section1 .footer {
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section1 .footer p {
+    width: 25%;
+    text-align: left;
+}
+
+.section1 .footer a {
+    background-color: white;
+    position: relative;
+    height: 10vh;
+    width: 20%;
+}
+
+.section1 .footer a * {
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.section2 {
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: auto;
+    position: relative;
+}
+
+.section2 .textBlock {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 50vh;
+    width: 70%;
+    position: relative;
+    left: 20%;
+    top: 10%;
+}
+.section2 .textBlock *{
+    padding-bottom: 3%;
+
+}
+.section2 .textBlock a {
+    width: 30%;
+    height: 5vh;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    left: 0%;
+}
+
+.section2 .textBlock a *{
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    top: 25%;
+    left: 24%;
+}
+
+.section2 .textBlock h5{
+    opacity: 0.5;
+}
+
+.section2 .photo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 50vh;
+    position: relative;
+    left: 10%;
+}
+
+.section2 .photo img {
+    height: 50vh;
+}
+
+.section2 .vid {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    height: 50vh;
+    background-image: url("img/keyboard.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.section2 .vid::after {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.6;
+    background-color: black;
+}
+
+.section2 .vid * {
+    position: absolute;
+    color: white;
+    z-index: 2;
+}
+
+.section2 .vid h1 {
+    left: 40%;
+    top: 10%;
+}
+
+.section2 .vid a {
+    left: 45%;
+    top: 40%;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.section3{
+    width: 100%;
+    height: 100vh;
+}
+
+.section3 .main{
+    width: 100%;
+    height: 80vh;
+}
+
+.section3 .main .text{
+    width: 100%;
+    height: 30vh;
+    
+}
+
+.section3 .main .buttons{
+    width: 100%;
+    height: 10vh;
+    
+}
+.section3 .main .pics{
+    width: 100%;
+    height: 40vh;
+    
+}
+
+.section3 .footer{
+    width: 100%;
+    height: 20vh;
+}
